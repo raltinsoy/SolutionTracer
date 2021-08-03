@@ -2,8 +2,8 @@
 Logging almost every code.
 
 # Steps
-1. Install **Tracer.Fody** package from nuget. **FodyWeavers.xml** will be added to the project's folder.  
-2. **NLog** is used to log in this project, so Install **Tracer.4NLog.Fody** package from nuget.
+1. Install [**Tracer.Fody**](https://github.com/csnemes/tracer) package from nuget. **FodyWeavers.xml** will be added to the project's folder.  
+2. [**NLog**](https://github.com/NLog/NLog) is used to log in this project, so Install **Tracer.4NLog.Fody** package from nuget.
 3. **NLog.config** is added to the project and "Copy Always" is selected from Properties.
 4. **FodyWeavers.xml** is configured as desired.
 5. After executing the program, **file.txt** will be found in the folder where .exe is located.
@@ -49,9 +49,3 @@ private static void Main(string[] args)
   $log.TraceLeave("Main(String[])", null, timestamp, Stopwatch.GetTimestamp(), null, null);
 }
 ```
-
-# Dependencies
-- NLog
-- Fody
-- Tracer.Fody
-- Tracer.4NLog.Fody
